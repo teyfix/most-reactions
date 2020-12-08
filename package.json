@@ -1,0 +1,60 @@
+{
+  "name": "most-reactions",
+  "version": "1.0.0",
+  "description": "watch and list most reacted messages in a discord channel",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node -r source-map-support/register dist/main.js",
+    "start:dev": "cross-env NODE_ENV=dev npm start",
+    "start:prod": "cross-env NODE_ENV=prod npm start",
+    "start:watch": "rimraf dist && concurrently \"tsc --watch\" \"wait-on dist && nodemon\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teyfik-on-it/most-reactions.git"
+  },
+  "keywords": [
+    "discord",
+    "most",
+    "reacted",
+    "messages"
+  ],
+  "author": "teyfik-on-it",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teyfik-on-it/most-reactions/issues"
+  },
+  "homepage": "https://github.com/teyfik-on-it/most-reactions#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.10",
+    "class-transformer": "^0.3.1",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6",
+    "rimraf": "^3.0.2",
+    "source-map-support": "^0.5.19",
+    "typescript": "^4.1.2",
+    "wait-on": "^5.2.0"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "discord.js": "^12.5.1",
+    "sqlite3": "^5.0.0",
+    "typeorm": "^0.2.29",
+    "yaml": "^1.10.0",
+    "yenv": "^2.1.1"
+  },
+  "nodemonConfig": {
+    "exec": "npm run start:dev",
+    "delay": 1000,
+    "ext": "js,json,yaml",
+    "watch": [
+      "dist",
+      "lang",
+      "tsconfig.json",
+      "package.json",
+      "env.yaml"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+channelDeafen: im not listening this channel
+insufficientPermissions: insufficient permissions
+list: list
+madeBy: made by %author
+missingCommand: yes ?
+mostReacted: most voted messages for this channel (%current/%total)
+noReaction: no messages yet..
+reactionCount: %count votes
+unknownCommand: wuT
+unwatch: enough
+unwatchFailed: oops.. didnt work..
+unwatchSucceeded: ok.. whatever
+watch: watch
+watchFailed: dunno why but couldnt listen
+watchSucceeded: done

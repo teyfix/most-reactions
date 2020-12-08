@@ -1,0 +1,15 @@
+channelDeafen: bu kanali dinlemiyom
+insufficientPermissions: kalifiye.. deglsiin
+list: listele
+madeBy: yapildi tarafindan %author
+missingCommand: evt ?
+mostReacted: bu kanalin en cok oy alan mesjlari (%current/%total)
+noReaction: henuz mesaj yok..
+reactionCount: %count oy
+unknownCommand: nE
+unwatch: yeter
+unwatchFailed: hmm.. olmadi..
+unwatchSucceeded: tm isim bitmisti zaten
+watch: izle
+watchFailed: nedense izleyemiyorm..
+watchSucceeded: tmdir
